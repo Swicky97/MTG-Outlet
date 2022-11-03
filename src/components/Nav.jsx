@@ -38,6 +38,7 @@ const Nav = ({ numberOfItems }) => {
           <li className="nav__icon">
             <Link to="/cart" className="nav__link">
               <FontAwesomeIcon icon="shopping-cart" />
+              
             </Link>
           </li>
         </ul>

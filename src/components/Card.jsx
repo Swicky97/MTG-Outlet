@@ -16,7 +16,7 @@ const Card = ({ card }) => {
           {card.title}
         </Link>
       </div>
-      <Ratings rating="4.5" />
+      <Ratings rating={card.rating} />
       <Price salePrice={card.salePrice} originalPrice={card.originalPrice} />
     </div>
   );

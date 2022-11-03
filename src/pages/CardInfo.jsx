@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Price from "../components/ui/Price";
 import Ratings from "../components/ui/Ratings";
+import Card from "../components/Card";
 
-const CardInfo = ({ cards }) => {
+const CardInfo = ({ cards, addToCart, cart }) => {
   const { id } = useParams();
   const card = cards.find((card) => +card.id === +id);
 
@@ -38,7 +39,9 @@ const CardInfo = ({ cards }) => {
                   <h3 className="card__summary--title">Card Details</h3>
                   <p className="card__summary--para">{card.details}</p>
                 </div>
-                <button className="btn">Add to cart</button>
+                <button className="btn" onClick={() => addToCart(card)}>
+                  Add to cart
+                </button>
               </div>
             </div>
           </div>
@@ -46,9 +49,15 @@ const CardInfo = ({ cards }) => {
         <div className="cards__container">
           <div className="row">
             <div className="card__selected--top">
-              <div className="card__selected--title--top">
-                <h2>Recommended cards</h2>
-              </div>
+              <h2 className="card__selected--title--top">Recommended cards</h2>
+            </div>
+            <div className="cards">
+              {cards
+                .filter((card) => card.rating === 5 && +card.id !== +id)
+                .slice(0, 4)
+                .map((card) => (
+                  <Card card={card} key={card.id} />
+                ))}
             </div>
           </div>
         </div>
