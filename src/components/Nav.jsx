@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import WBLogo from "../assets/WB.png";
-import { Link } from "react-router-dom";
 
 const Nav = ({ numberOfItems }) => {
   function openMenu() {

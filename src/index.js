@@ -4,15 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBars, faShoppingCart, faTimes, faBolt, faBoxOpen, faTags } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faShoppingCart, faTimes, faBolt, faBoxOpen, faTags, faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faBars, faShoppingCart, faTimes, faBolt, faBoxOpen, faTags)
+library.add(faBars, faShoppingCart, faTimes, faBolt, faBoxOpen, faTags, faStar, faStarHalfAlt)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <App />
-  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
