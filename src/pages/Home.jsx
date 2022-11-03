@@ -1,4 +1,3 @@
-import { faHomeLg } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import Landing from "../components/Landing";
 import Highlights from "../components/Highlights";

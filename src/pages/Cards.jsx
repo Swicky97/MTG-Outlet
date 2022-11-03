@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "../components/ui/Card";
+import Card from "../components/Card";
 
 const Cards = ({ cards: initialCards }) => {
   const [cards, setCards] = useState(initialCards);

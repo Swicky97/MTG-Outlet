@@ -1,5 +1,6 @@
 import React from "react";
 import UndrawCards from "../assets/undraw_playing_cards.svg";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -11,9 +12,9 @@ const Landing = () => {
             <h2>
               Find the cards you need with <span className="purple">Collection</span>
             </h2>
-            <a href="#features">
+            <Link to="#features">
               <button className="btn">Browse cards</button>
-            </a>
+            </Link>
           </div>
           <figure className="header__img--wrapper">
             <img src={UndrawCards} alt="" />

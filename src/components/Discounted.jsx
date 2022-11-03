@@ -1,6 +1,6 @@
 import React from "react";
 import { cards } from "../data";
-import Card from "./ui/Card";
+import Card from "./Card";
 
 const Discounted = () => {
   return (
