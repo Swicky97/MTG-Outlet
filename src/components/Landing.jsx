@@ -10,11 +10,11 @@ const Landing = () => {
           <div className="header__description">
             <h1>America's most popular MTG E-commerce platform</h1>
             <h2>
-              Find the cards you need with <span className="purple">Collection</span>
+              Find the cards you need with <span className="purple">MTG Outlet</span>
             </h2>
-            <Link to="#features">
+            <a href="#features">
               <button className="btn">Browse cards</button>
-            </Link>
+            </a>
           </div>
           <figure className="header__img--wrapper">
             <img src={UndrawCards} alt="" />

@@ -8,7 +8,7 @@ const Featured = () => {
       <div className="container">
         <div className="row">
           <h2 className="section__title">
-            Featured <span className="purple">Cards</span>
+            Trending <span className="purple">Cards</span>
           </h2>
           <div className="cards">
             {cards

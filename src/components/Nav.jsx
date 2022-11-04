@@ -38,8 +38,10 @@ const Nav = ({ numberOfItems }) => {
           <li className="nav__icon">
             <Link to="/cart" className="nav__link">
               <FontAwesomeIcon icon="shopping-cart" />
-              
             </Link>
+            {
+              numberOfItems > 0 && <span className="cart__length">{numberOfItems}</span>
+            }
           </li>
         </ul>
         <div className="menu__backdrop">

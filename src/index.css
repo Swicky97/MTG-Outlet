@@ -232,7 +232,7 @@ LANDING
 */
 
 #landing {
-  background-color: rgba(115, 66, 214, 0.1)
+  background-color:rgb(255, 255, 61);
 }
 
 header {
@@ -257,13 +257,7 @@ header {
 
 .header__img--wrapper {
   padding: 20px;
-
-  /* Added this after the tutorial to 
-  show it over the wave on larger screens */
   z-index: 50;
-  
-  /* Added this after the tutorial to 
-  make landing page responsive on laptops */
   max-height: 50vh;
 }
 
@@ -370,7 +364,7 @@ FEATURES
 
 #features {
   padding-top: 8vw;
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: rgb(255, 255, 61);
 }
 
 .cards {
@@ -411,6 +405,7 @@ FEATURES
 .card__title--skeleton {
   height: 21px;
   width: 100%;
+  max-width: 250px;
 }
 
 .card__rating--skeleton {
@@ -461,7 +456,7 @@ EXPLORE
 */
 
 #explore {
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: rgb(255, 255, 61);
 }
 
 /* 
@@ -471,7 +466,7 @@ FOOTER
 */
 
 footer {
-  background-color: #242424;
+  background-color: #7342d6;
 }
 
 .footer__logo {
@@ -479,8 +474,7 @@ footer {
 }
 
 .footer__logo--img {
-  width: 160px;
-  filter: grayscale(1) invert(1);
+  width: 100px;
 }
 
 .footer__link,
