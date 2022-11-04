@@ -73,7 +73,7 @@ export const cards = [
   },
   {
     id: 9,
-    title: "Scalding tarn",
+    title: "Scalding Tarn",
     url: "https://www.mtgpics.com/pics/big/mh2/254.jpg",
     originalPrice: 20.35,
     salePrice: 18.32,
@@ -137,7 +137,7 @@ export const cards = [
   {
     id: 16,
     title: "Brainstorm",
-    url: "https://www.mtgpics.com/pics/big/tsr/308.jpg",
+    url: "https://www.mtgpics.com/pics/big/2xm/044.jpg",
     originalPrice: 1.22,
     salePrice: null,
     rating: 3.0,
